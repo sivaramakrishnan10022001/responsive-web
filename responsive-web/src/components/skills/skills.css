@@ -1,0 +1,50 @@
+.skills-wapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #575c61;
+    height: 100%;
+    width: 100%;
+    min-height: 500px;
+}
+
+.skills-wapper>.main {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-wapper>.main>.skill {
+    width: 200px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
+    user-select: none;
+    transition: all 0.3s linear;
+}
+
+.skills-wapper>.main>.skill>img {
+    width: 128px;
+    height: 128px;
+}
+
+.skills-wapper>.main>.skill>h4 {
+    color: #5c5858;
+    line-height: 30px;
+}
+
+.skills-wapper>.main>.skill>p {
+    line-height: 20px;
+}

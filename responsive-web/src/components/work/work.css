@@ -1,0 +1,15 @@
+.work-wapper {
+    width: 100%;
+    height: 600px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.work-wapper>img {
+    width: 80%;
+    height: 80%;
+}

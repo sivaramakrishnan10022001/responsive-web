@@ -1,0 +1,73 @@
+.contact-wapp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    padding: 0 40px;
+    background-color: #2B343B;
+}
+
+.contact-wapp >.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-wapp >.contact> div{
+    text-transform: lowercase;
+    font-weight: 450;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.contact-wapp >.contact> div>span{
+    text-transform:initial;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contact-wapp >.icons-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-wapp>.icons-container>svg{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    fill: #ffffff;
+    margin: 0 10px;
+    animation: float 5s ease-in-out infinite;
+}
+
+.contact-wapp>.icons-container>svg:hover{
+    fill: #124699;
+}
+
+.contact-wapp>.icons-container>.face{
+    animation-delay: 1s;
+}
+
+.contact-wapp>.icons-container>.whats{
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

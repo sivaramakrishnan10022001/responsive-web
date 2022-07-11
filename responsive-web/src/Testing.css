@@ -1,0 +1,178 @@
+/*============================== navigation =================================*/
+
+.n-container {
+    position: relative;
+    width: 230px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+    border: 1px solid rgb(212, 211, 211);
+}
+
+.n-container>.n-company {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0px 20px;
+}
+
+.n-container>.n-company>.n-logo {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.n-container>.n-company>.n-logo>svg {
+    height: 23px;
+    width: 23px;
+    fill: black;
+}
+
+.n-container>.n-company>.n-name {
+    text-align: start;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 20px;
+}
+
+.n-container>.n-content {
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.n-container>.n-content::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 3px;
+}
+
+.n-container>.n-content::-webkit-scrollbar-track {
+    scroll-behavior: smooth;
+    border-radius: 50px;
+}
+
+.n-container>.n-content::-webkit-scrollbar-thumb {
+    scroll-behavior: smooth;
+    background-color: #0d79dd;
+    border-radius: 20px;
+    height: 10px;
+}
+
+.n-container>.n-content>.n-item {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+    padding: 0 20px;
+    border-top: 1px solid rgb(197, 196, 196);
+}
+
+.n-container>.n-content>.flex-start {
+    justify-content: flex-start;
+}
+
+.n-container>.n-content>.space-between {
+    justify-content: space-between;
+
+}
+
+.n-container>.n-content>.n-item>.n-item-logo {
+    width:auto;
+}
+
+.n-container>.n-content>.n-item>.n-item-logo>svg {
+    height: 20px;
+    width: 20px;
+    fill: black;
+}
+
+.n-container>.n-content>.n-item>.n-item-name {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.n-container>.n-content>.n-item>.n-item-arrow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.n-container>.n-content>.n-item>.n-item-arrow>svg {
+    height: 20px;
+    width: 20px;
+    fill: black;
+}
+
+.n-container>.n-user-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 6px;
+    background-color: #ffffff;
+    border-top: 1px solid #c2c2c2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.n-container>.n-user-card>.n-user-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.n-container>.n-user-card>.n-user-img>.profile {
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    zoom: 1.1;
+    border-radius: 30%;
+}
+
+.n-container>.n-user-card>.n-user {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.n-container>.n-user-card>.n-user>.n-user-name {
+    width: 100%;
+    text-align: start;
+    font-size: 16px;
+}
+
+.n-container>.n-user-card>.n-user>.n-user-job {
+    text-align: start;
+    width: 100%;
+    font-size: 12px;
+}
+
+.n-container>.n-user-card>.n-logout>.n-logout-svg {
+    height: 18px;
+    width: 18px;
+    fill: rgb(51, 50, 50);
+    cursor: pointer;
+}

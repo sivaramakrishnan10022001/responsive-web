@@ -1,0 +1,384 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease;
+    user-zoom: none;
+}
+
+.sidebar.close {
+    overflow: hidden;
+}
+
+.sidebar>.logo-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar>.nav-links {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sidebar>.nav-links::-webkit-scrollbar {
+    scroll-behavior: smooth;
+}
+
+
+.sidebar>.nav-links::-webkit-scrollbar-track {
+    scroll-behavior: smooth;
+}
+
+.sidebar>.nav-links::-webkit-scrollbar-thumb {
+    scroll-behavior: smooth;
+}
+
+.sidebar.close>.nav-links {
+    overflow: hidden;
+}
+
+.sidebar>.nav-links>.inline {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar>.nav-links>.inline>.inline-iocn-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sidebar>.nav-links>.inline>.inline-iocn-link>svg {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar>.nav-links>.inline>.inline-iocn-link>.link-name {
+    transition: all 0.4s ease;
+}
+
+.sidebar>.nav-links>.column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar>.nav-links>.column>.iocn-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar>.nav-links>.column>.iocn-link>svg {
+    transition: all 0.3s ease;
+}
+
+.sidebar>.nav-links>.column>.iocn-link>svg:last-child {
+    cursor: pointer;
+}
+
+.sidebar>.nav-links>.column.showMenu>.iocn-link>.arrow {
+    transform: rotate(-180deg);
+}
+
+.sidebar>.nav-links>.column>.iocn-link>.link-name {
+    transition: all 0.4s ease;
+}
+
+.sidebar>.nav-links>.column>.sub-menu {
+    width: 100%;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    transition: .0s;
+    display: none;
+}
+
+.sidebar>.nav-links>.column.showMenu>.sub-menu {
+    display: block;
+    height: 100%;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item:hover {
+    opacity: 1;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item>svg {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item>.subtitleName {
+    transition: all 0.4s ease;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item>.child-container {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #11101d;
+}
+
+.sidebar>.nav-links>.column>.sub-menu>.sub-item>.child-container>.child {
+    height: 30px;
+    width: 100%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.sidebar>.nav-links>.profile-details {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+
+.sidebar>.nav-links>.profile-details>.profile-content {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar>.nav-links>.profile-details>.profile-content>img {
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.sidebar>.nav-links>.profile-details>.name-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.sidebar.close>.nav-links>.profile-details>.name-job {
+    display: none;
+}
+
+.sidebar>.nav-links>.profile-details>.name-job>.profile-name {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sidebar>.nav-links>.profile-details>.name-job>.job {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sidebar>.nav-links>.profile-details>svg {
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidebar.close>.nav-links>.profile-details>svg {
+    display: none;
+}
+
+/* sample css */
+
+.sidebar.sample {
+    width: 260px;
+    height: 100vh;
+    background: #11101d;
+}
+
+.sidebar.sample.close {
+    width: 79px;
+    height: 100vh;
+}
+
+.sidebar.sample>.logo-details {
+    height: 60px;
+    padding: 5px 2px;
+    line-height: 50px;
+}
+
+.sidebar.sample.close>.logo-details {
+    height: 60px;
+    padding: 5px 2px;
+    line-height: 50px;
+}
+
+.sidebar.sample>.logo-details>svg {
+    height: 35px;
+    width: 35px;
+    min-width: 78px;
+    line-height: 50px;
+    fill: #ffffff;
+}
+
+.sidebar.sample>.logo-details>.logo-name {
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.sidebar.sample>.nav-links {
+    padding: 30px 0 150px 0;
+}
+
+.sidebar.sample>.nav-links::-webkit-scrollbar {
+    width: 3px;
+}
+
+.sidebar.sample>.nav-links::-webkit-scrollbar-track {
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+.sidebar.sample>.nav-links::-webkit-scrollbar-thumb {
+    background-color: #0d79dd;
+    border-radius: 20px;
+    height: 10px;
+}
+
+.sidebar.sample>.nav-links>.inline {
+    line-height: 50px;
+}
+
+.sidebar.sample>.nav-links>.inline>.inline-iocn-link>svg {
+    height: 20px;
+    width: 20px;
+    fill: #ffffff;
+    line-height: 50px;
+    min-width: 78px;
+}
+
+.sidebar.sample>.nav-links>.inline>.inline-iocn-link>.link-name {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.sidebar.sample>.nav-links>.column {
+    line-height: 50px;
+}
+
+.sidebar.sample>.nav-links>.column>.iocn-link>svg {
+    height: 20px;
+    width: 20px;
+    fill: #ffffff;
+    line-height: 50px;
+    min-width: 78px;
+}
+
+.sidebar.sample>.nav-links>.column>.iocn-link>svg:last-child {
+    height: 23px;
+    width: 23px;
+}
+
+.sidebar.sample>.nav-links>.column>.iocn-link>.link-name {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    text-align: start;
+}
+
+.sidebar.sample>.nav-links>.column>.sub-menu {
+    background-color: #1d1b31;
+    padding: 8px 0;
+}
+
+.sidebar.sample>.nav-links>.column>.sub-menu>.sub-item {
+    line-height: 30px;
+    padding: 6px 0;
+}
+
+.sidebar.sample>.nav-links>.column>.sub-menu>.sub-item>svg {
+    height: 20px;
+    width: 20px;
+    fill: #ffffff;
+    line-height: 50px;
+    min-width: 50px;
+}
+
+.sidebar.sample>.nav-links>.column>.sub-menu>.sub-item>.subtitleName {
+    width: 65%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: start;
+}
+
+.sidebar.sample>.nav-links>.profile-details {
+    width: 260px;
+    height: 80px;
+    background: #1d1b31;
+    padding: 10px 0;
+}
+
+.sidebar.sample.close>.nav-links>.profile-details {
+    width: 78px;
+}
+
+.sidebar.sample>.nav-links>.profile-details>.profile-content>img {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 17px;
+    margin: 0 14px 0 12px;
+    background: #1d1b31;
+}
+
+.sidebar.sample>.nav-links>.profile-details>.name-job {
+    min-width: 120px;
+    padding-left: 2px;
+}
+
+.sidebar.sample>.nav-links>.profile-details>.name-job>.profile-name {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebar.sample>.nav-links>.profile-details>.name-job>.job {
+    color: #ffffff;
+    font-size: 12px;
+    text-align: start;
+}
+
+.sidebar.sample>.nav-links>.profile-details>svg {
+    height: 20px;
+    width: 20px;
+    min-width: 65px;
+    line-height: 50px;
+    fill: #fff;
+}
